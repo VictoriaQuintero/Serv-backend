@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser");
-const funciones = require('./funciones')
+const morgan = require("morgan");
+const funciones = require('./funciones');
 
+
+app.use(morgan("dev"));
 app.use(express.json());
 
 
