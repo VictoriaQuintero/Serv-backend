@@ -11,34 +11,76 @@ app.use(express.json());
 
 ciudad = [
     {
-        'tipo': 'casa',
-        'altura': '10m',
-        'estado': 'remodelada',
+        'tipo': 'Casa',
+        'color': 'verde',
+        'ventanas': '8',
+        "estado" : "remodelada",
+        "tamaño" : "80m",
         "id": "0"
     },
     {
         'tipo': 'EDIFICIO',
-        'altura': '100m',
-        'estado': 'Vieja',
+        'tamaño': '100m',
+        'estado': 'abandonado',
+        "color" : "negro",
+        "ventanas" : "40",
         "id": "1"
     },
     {
-        'tipo': 'casa',
-        'altura': '100m',
-        'estado': 'nueva',
+        'tipo': 'Casa',
+        'color': 'rojo',
+        'ventanas': '4',
+        "estado" : "nueva",
+        "tamaño" : "50m",
         "id": "2"
     },
     {
         "tipo" : "parque",
-        "ubicacion" : "este",
-        "columpios" : "3",
+        "ubicación" : "este",
+        "columpios" : "10",
+        "estado" : "activo",
+        "tamaño" : "400m",
         "id" : "3"
     },
     {
-        "tipo" : "edificio",
-        "color" : "negro",
-        "tamaño" : "50m",
+        "tipo" : "puente",
+        "estado" : "nuevo",
+        "largo" : "50m",
+        "ubicación" : "norte",
+        "altura" : "70m",
         "id" : "4"
+    },
+    {
+        "tipo" : "zona comercial",
+        "nombre" : "banco",
+        "ubicación" : "sur",
+        "tamaño" : "70m",
+        "estado" : "activo",
+        "id" : "5"
+    },
+    {
+        "tipo" : "apartamento",
+        "color" : "blanco",
+        "estado" : "nuevo",
+        "ubicación" : "oeste",
+        "tamaño" : "20m",
+        "id" : "6"
+    },
+    {
+        "tipo" : "zona comercial",
+        "nombre" : "zapateria",
+        "ubicación" : "caracas",
+        "tamaño" : "10m",
+        "estado" : "clausurado",
+        "id" : "7"
+    },
+    {
+        "tipo" : "puente",
+        "estado" : "viejo",
+        "largo" : "30m",
+        "ubicación" : "avenida miranda",
+        "altura" : "55m",
+        "id" : "8"
     }
 ]
 
