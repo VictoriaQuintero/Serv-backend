@@ -87,11 +87,13 @@ ciudad = [
 //metodo get para mostrar la ciudad completa
 app.get("/", (req, res) => {
     res.json(ciudad);
+    res.status(200);
 });
 
 //metodo get para saber la cantidad de edificaciones
 app.get('/cantidad', (req, res) =>{
     res.send("la cantidad de edificaciones construidas es: " + ciudad.length);
+    res.status(200);
 })
 
 //metodo post para agregar alguna edificación 
@@ -99,6 +101,7 @@ app.post('/agregar/:id', (req, res) => {
     ciudad.push(req.body);
     ciudad[ciudad.length - 1].id = req.params.id;
     res.send("Edificacion recibida Correctamente, la edificacion esta en el puesto: " + req.params.id + " si desea editarla debe utilizar ese id");
+    res.status(201);
 });
 
 //metodo put para editar alguna edificacion 
