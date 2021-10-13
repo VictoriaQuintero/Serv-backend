@@ -112,7 +112,8 @@ app.put('/editar/:id', (req, res) => {
 //metodo delete para eliminar alguna edificacion 
 app.delete('/eliminar/:id', (req, res) => {
     funciones.eliminarEdif(req.params.id, res);
-})
+});
+
 //metodo get para mostrar un tipo de edificacion por grupos
 app.get('/ciudad/:tipo', (req, res) => {
     funciones.mostrarEdif(req.params.tipo, res);
@@ -120,7 +121,7 @@ app.get('/ciudad/:tipo', (req, res) => {
 
 //metodo get para mostrar edificaciones especificas por el id 
 app.get('/edificaciones/:id', (req, res) => {
-    funciones.MostrarPorId(req.params.id, req.body, res);
+    funciones.MostrarPorId(req.params.id, res);
 
 })
 
