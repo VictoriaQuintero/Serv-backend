@@ -51,7 +51,7 @@ ciudad = [
         "id" : "4"
     },
     {
-        "tipo" : "zona comercial",
+        "tipo" : "zonacomercial",
         "nombre" : "banco",
         "ubicación" : "sur",
         "tamaño" : "70m",
@@ -67,7 +67,7 @@ ciudad = [
         "id" : "6"
     },
     {
-        "tipo" : "zona comercial",
+        "tipo" : "zonacomercial",
         "nombre" : "zapateria",
         "ubicación" : "caracas",
         "tamaño" : "10m",
